@@ -1,0 +1,5 @@
+<app-to-do-item 
+    *ngFor="let toDo of toDos" 
+    [toDo]="toDo" 
+    (onRemoveToDo)="removeToDo(toDo)"
+    (onToggle)="toggleCompleted(toDo)"></app-to-do-item>
